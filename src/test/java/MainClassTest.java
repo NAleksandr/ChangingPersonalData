@@ -32,7 +32,7 @@ public class MainClassTest {
     public void SuccessChangeOfPersonalData() {
 
         // Изменяем значения во всех возможных полях (Фамилия, Имя, Пол, Дата Рождения, Город проживания, Родной город)
-        loginPage.typeLogin("79998071041", "jbLWrXSs1");
+        loginPage.typeLogin("79998071041", "qazwsx123");
         profilePage.clickMySettings();
         settingPage.clickPersonalData();
         personalDataPage.clearNameField();
@@ -59,11 +59,11 @@ public class MainClassTest {
     public void RepeatedChangeOfNamePerDay() {
 
         // Повторное изменение имени в течении суток
-        loginPage.typeLogin("79998071041", "jbLWrXSs1");
+        loginPage.typeLogin("79998071041", "qazwsx123");
         profilePage.clickMySettings();
         settingPage.clickPersonalData();
         personalDataPage.clearNameField();
-        personalDataPage.typeNameField("Вячеслав");
+        personalDataPage.typeNameField("Петя");
         personalDataPage.clickSaveButton();
 
         String errorChange = personalDataPage.getErrorText();
@@ -75,7 +75,7 @@ public class MainClassTest {
     public void RepeatedChangeOfSurnamePerDay() {
 
         // Повторное изменение фамилии в течении суток
-        loginPage.typeLogin("79998071041", "jbLWrXSs1");
+        loginPage.typeLogin("79998071041", "qazwsx123");
         profilePage.clickMySettings();
         settingPage.clickPersonalData();
         personalDataPage.clearSurnameField();
@@ -91,7 +91,7 @@ public class MainClassTest {
     public void CheckDisplayErrorIfEmptyName() {
 
         //Отображение ошибки когда поле Имя пустое
-        loginPage.typeLogin("79998071041", "jbLWrXSs1");
+        loginPage.typeLogin("79998071041", "qazwsx123");
         profilePage.clickMySettings();
         settingPage.clickPersonalData();
         personalDataPage.clearNameField();
@@ -105,7 +105,7 @@ public class MainClassTest {
     public void CheckDisplayErrorIfEmptySurname() {
 
         //Отображение ошибки когда поле Фамилия пустое
-        loginPage.typeLogin("79998071041", "jbLWrXSs1");
+        loginPage.typeLogin("79998071041", "qazwsx123");
         profilePage.clickMySettings();
         settingPage.clickPersonalData();
         personalDataPage.clearSurnameField();
@@ -119,7 +119,7 @@ public class MainClassTest {
     public void CheckDisplayErrorIfInvalidDate() {
 
         //Отображение ошибки когда некорректно заполнена Дата Рождения
-        loginPage.typeLogin("79998071041", "jbLWrXSs1");
+        loginPage.typeLogin("79998071041", "qazwsx123");
         profilePage.clickMySettings();
         settingPage.clickPersonalData();
         personalDataPage.selectBDay("29");
@@ -134,7 +134,7 @@ public class MainClassTest {
     public void CheckDisplayErrorIfEmptyCurrentCity() {
 
         //Отображение ошибки когда город проживания пустой
-        loginPage.typeLogin("79998071041", "jbLWrXSs1");
+        loginPage.typeLogin("79998071041", "qazwsx123");
         profilePage.clickMySettings();
         settingPage.clickPersonalData();
         personalDataPage.clearCurrentCity();
@@ -148,7 +148,7 @@ public class MainClassTest {
     public void ChangePersonalDataIfEmptyHometown() {
 
         //В случае, если не заполнено поле Родной город, сохраненин отрабатывает без ошибок
-        loginPage.typeLogin("79998071041", "jbLWrXSs1");
+        loginPage.typeLogin("79998071041", "qazwsx123");
         profilePage.clickMySettings();
         settingPage.clickPersonalData();
         personalDataPage.clearHometown();
@@ -163,7 +163,7 @@ public class MainClassTest {
     public void ChangeGender() {
 
         //Изменение значения чекбокса Пол
-        loginPage.typeLogin("79998071041", "jbLWrXSs1");
+        loginPage.typeLogin("79998071041", "qazwsx123");
         profilePage.clickMySettings();
         settingPage.clickPersonalData();
         personalDataPage.selectGenderWoman();
@@ -178,7 +178,7 @@ public class MainClassTest {
     public void CancelChangeOfPersonalData() {
 
         //Корректное изменение данных, отмена сохранения
-        loginPage.typeLogin("79998071041", "jbLWrXSs1");
+        loginPage.typeLogin("79998071041", "qazwsx123");
         profilePage.clickMySettings();
         settingPage.clickPersonalData();
         personalDataPage.clearNameField();
