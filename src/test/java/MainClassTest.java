@@ -59,7 +59,7 @@ public class MainClassTest {
     public void RepeatedChangeOfNamePerDay() {
 
         // Повторное изменение имени в течении суток
-        loginPage.typeLogin("79998071041", "qazwsx123");
+        loginPage.typeLogin();
         profilePage.clickMySettings();
         settingPage.clickPersonalData();
         personalDataPage.clearNameField();
